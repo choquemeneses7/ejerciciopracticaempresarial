@@ -1,4 +1,5 @@
 {
 	"appName": "Ejercicio TxE",
-	"labelNoUsers": "There is No Users to Show"
+	"labelNoUsers": "There is No Users to Show",
+	"labelGithub": "GITHUB URL:"
 }

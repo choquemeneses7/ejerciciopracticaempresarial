@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   readonly users = (<any>data).users;
   readonly title : string = (<any>config).appName;
   readonly errormessage : string = (<any>config).labelNoUsers;
-  
+  readonly github: string = (<any>config).labelGithub;
   constructor(title:Title)
   {
   	title.setTitle(this.title); 
