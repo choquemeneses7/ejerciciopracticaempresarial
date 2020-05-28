@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="users?.length > 0">
   <div class="card mb-3" *ngFor="let user of users">
       <h3 class="card-header">{{user.name}}</h3>
       <div class="card-body">
@@ -12,6 +12,9 @@
         <span>GITHUB URL: </span><a href="{{user.github_url}}" class="card-link">{{user.github_url}}</a>
       </div>
     </div>
+</div>
+<div class="container text-center" *ngIf="!(users?.length > 0)">
+  <h3 class="card-header">{{errormessage}}</h3>
 </div>
 
 
